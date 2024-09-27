@@ -3413,6 +3413,8 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id keyManagerBtn
+id keyNameView
+id key_name
 id labeled
 id layout
 id left

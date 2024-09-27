@@ -46,7 +46,9 @@ import java.security.spec.X509EncodedKeySpec
 
 import android.app.Activity
 import android.net.Uri
+import android.widget.EditText
 import com.android.oms.databinding.ActivityMainBinding
+import java.sql.RowId
 
 class MainActivity : AppCompatActivity() {
 
@@ -85,18 +87,32 @@ class MainActivity : AppCompatActivity() {
     //On click send BTN
     @RequiresApi(Build.VERSION_CODES.O)
     fun sendBtn(view: View) {
-
-
         val messageView: TextView = findViewById(R.id.messageView)
         val message = messageView.text.toString()
 
-        val phoneNumberView: TextView = findViewById(R.id.phoneNumberView)
-        val phone = phoneNumberView.text.toString()
+        if (message !="") {
 
-        //message = encrypt(message, "abc")
+            val name_key = findViewById<EditText>(R.id.keyNameView)
+            val key: String = readString(name_key.text.toString(), "other-key").toString()
 
-        sendOMS(phone, message, getPublic())
+            if (name_key.text.toString() != "" && key != "") {
 
+
+                val phoneNumberView: TextView = findViewById(R.id.phoneNumberView)
+                val phone = phoneNumberView.text.toString()
+
+                //message = encrypt(message, "abc")
+
+                sendOMS(phone, message, stringToPublicKey(key))    //Send OMS with Key
+
+            } else {
+                Toast.makeText(this, "Enter Valid name Key", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        else{
+            Toast.makeText(this, "Enter Message", Toast.LENGTH_SHORT).show()
+        }
 
     }
 

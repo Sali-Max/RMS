@@ -94,183 +94,184 @@
 52-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:24:9-61
 53        android:supportsRtl="true"
 53-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:25:9-35
-54        android:theme="@style/Theme.OMS" >
-54-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:26:9-41
-55        <activity
-55-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:28:9-30:40
-56            android:name="com.android.oms.Messages"
-56-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:29:13-37
-57            android:exported="false" />
-57-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:30:13-37
-58        <activity
-58-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:31:9-33:40
-59            android:name="com.android.oms.message"
-59-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:32:13-36
-60            android:exported="false" />
-60-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:33:13-37
-61        <activity
-61-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:34:9-37:52
-62            android:name="com.android.oms.scanQR"
-62-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:35:13-35
-63            android:exported="false"
-63-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:36:13-37
-64            android:screenOrientation="portrait" />
-64-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:37:13-49
-65        <activity
-65-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:38:9-41:52
-66            android:name="com.android.oms.addKey"
-66-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:39:13-35
-67            android:exported="false"
-67-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:40:13-37
-68            android:screenOrientation="portrait" />
-68-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:41:13-49
-69        <activity
-69-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:42:9-45:52
-70            android:name="com.android.oms.addkKey"
-70-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:43:13-36
-71            android:exported="false"
-71-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:44:13-37
-72            android:screenOrientation="portrait" />
-72-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:45:13-49
-73        <activity
-73-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:46:9-49:52
-74            android:name="com.android.oms.KeyManager"
-74-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:47:13-39
-75            android:exported="false"
-75-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:48:13-37
-76            android:screenOrientation="portrait" />
-76-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:49:13-49
-77        <activity
-77-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:50:9-53:52
-78            android:name="com.android.oms.Qrcode"
-78-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:51:13-35
-79            android:exported="false"
-79-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:52:13-37
-80            android:screenOrientation="portrait" />
-80-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:53:13-49
-81        <activity
-81-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:54:9-58:48
-82            android:name="com.android.oms.Message"
-82-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:55:13-36
-83            android:exported="false"
-83-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:56:13-37
-84            android:screenOrientation="portrait"
-84-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:57:13-49
-85            android:theme="@style/Theme.OMS" />
-85-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:58:13-45
-86        <activity
-86-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:59:9-68:20
-87            android:name="com.android.oms.MainActivity"
-87-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:60:13-41
-88            android:exported="true"
-88-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:61:13-36
-89            android:screenOrientation="portrait" >
-89-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:62:13-49
-90            <intent-filter>
-90-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:63:13-67:29
-91                <action android:name="android.intent.action.MAIN" />
-91-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:64:17-69
-91-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:64:25-66
-92
-93                <category android:name="android.intent.category.LAUNCHER" />
-93-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:66:17-77
-93-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:66:27-74
-94            </intent-filter>
-95        </activity>
-96
-97        <provider
-97-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-98            android:name="androidx.startup.InitializationProvider"
-98-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-99            android:authorities="com.android.oms.androidx-startup"
-99-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-100            android:exported="false" >
-100-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-101            <meta-data
-101-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-102                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-102-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-103                android:value="androidx.startup" />
-103-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-104            <meta-data
-104-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/sali/.gradle/caches/transforms-4/06471bb851cbd0407dad068b0dc1f70c/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-105                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-105-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/sali/.gradle/caches/transforms-4/06471bb851cbd0407dad068b0dc1f70c/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-106                android:value="androidx.startup" />
-106-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/sali/.gradle/caches/transforms-4/06471bb851cbd0407dad068b0dc1f70c/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-107            <meta-data
-107-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-108                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-108-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-109                android:value="androidx.startup" />
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-110        </provider>
-111
-112        <uses-library
-112-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-113            android:name="androidx.window.extensions"
-113-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-114            android:required="false" />
-114-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-115        <uses-library
-115-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-116            android:name="androidx.window.sidecar"
-116-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-117            android:required="false" />
-117-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-118
-119        <receiver
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-120            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-120-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-121            android:directBootAware="false"
-121-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-122            android:enabled="true"
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-123            android:exported="true"
-123-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-124            android:permission="android.permission.DUMP" >
-124-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-126                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-127            </intent-filter>
-128            <intent-filter>
-128-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-129                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-130            </intent-filter>
-131            <intent-filter>
-131-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-132                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-132-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-132-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-133            </intent-filter>
-134            <intent-filter>
-134-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-135                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-135-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-135-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-136            </intent-filter>
-137        </receiver>
-138
-139        <activity
-139-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
-140            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-140-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
-141            android:clearTaskOnLaunch="true"
-141-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
-142            android:screenOrientation="sensorLandscape"
-142-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
-143            android:stateNotNeeded="true"
-143-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
-144            android:theme="@style/zxing_CaptureTheme"
-144-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
-145            android:windowSoftInputMode="stateAlwaysHidden" />
-145-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
-146    </application>
-147
-148</manifest>
+54        android:testOnly="true"
+55        android:theme="@style/Theme.OMS" >
+55-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:26:9-41
+56        <activity
+56-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:28:9-30:40
+57            android:name="com.android.oms.Messages"
+57-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:29:13-37
+58            android:exported="false" />
+58-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:30:13-37
+59        <activity
+59-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:31:9-33:40
+60            android:name="com.android.oms.message"
+60-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:32:13-36
+61            android:exported="false" />
+61-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:33:13-37
+62        <activity
+62-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:34:9-37:52
+63            android:name="com.android.oms.scanQR"
+63-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:35:13-35
+64            android:exported="false"
+64-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:36:13-37
+65            android:screenOrientation="portrait" />
+65-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:37:13-49
+66        <activity
+66-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:38:9-41:52
+67            android:name="com.android.oms.addKey"
+67-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:39:13-35
+68            android:exported="false"
+68-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:40:13-37
+69            android:screenOrientation="portrait" />
+69-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:41:13-49
+70        <activity
+70-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:42:9-45:52
+71            android:name="com.android.oms.addkKey"
+71-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:43:13-36
+72            android:exported="false"
+72-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:44:13-37
+73            android:screenOrientation="portrait" />
+73-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:45:13-49
+74        <activity
+74-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:46:9-49:52
+75            android:name="com.android.oms.KeyManager"
+75-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:47:13-39
+76            android:exported="false"
+76-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:48:13-37
+77            android:screenOrientation="portrait" />
+77-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:49:13-49
+78        <activity
+78-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:50:9-53:52
+79            android:name="com.android.oms.Qrcode"
+79-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:51:13-35
+80            android:exported="false"
+80-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:52:13-37
+81            android:screenOrientation="portrait" />
+81-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:53:13-49
+82        <activity
+82-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:54:9-58:48
+83            android:name="com.android.oms.Message"
+83-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:55:13-36
+84            android:exported="false"
+84-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:56:13-37
+85            android:screenOrientation="portrait"
+85-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:57:13-49
+86            android:theme="@style/Theme.OMS" />
+86-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:58:13-45
+87        <activity
+87-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:59:9-68:20
+88            android:name="com.android.oms.MainActivity"
+88-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:60:13-41
+89            android:exported="true"
+89-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:61:13-36
+90            android:screenOrientation="portrait" >
+90-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:62:13-49
+91            <intent-filter>
+91-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:63:13-67:29
+92                <action android:name="android.intent.action.MAIN" />
+92-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:64:17-69
+92-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:64:25-66
+93
+94                <category android:name="android.intent.category.LAUNCHER" />
+94-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:66:17-77
+94-->/home/sali/AndroidStudioProjects/OMS/app/src/main/AndroidManifest.xml:66:27-74
+95            </intent-filter>
+96        </activity>
+97
+98        <provider
+98-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+99            android:name="androidx.startup.InitializationProvider"
+99-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+100            android:authorities="com.android.oms.androidx-startup"
+100-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+101            android:exported="false" >
+101-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+102            <meta-data
+102-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+103                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+103-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+104                android:value="androidx.startup" />
+104-->[androidx.emoji2:emoji2:1.3.0] /home/sali/.gradle/caches/transforms-4/0ecd927945c99058383355b43ca4c475/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+105            <meta-data
+105-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/sali/.gradle/caches/transforms-4/06471bb851cbd0407dad068b0dc1f70c/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+106-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/sali/.gradle/caches/transforms-4/06471bb851cbd0407dad068b0dc1f70c/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+107                android:value="androidx.startup" />
+107-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/sali/.gradle/caches/transforms-4/06471bb851cbd0407dad068b0dc1f70c/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+108            <meta-data
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+109                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+110                android:value="androidx.startup" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+111        </provider>
+112
+113        <uses-library
+113-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+114            android:name="androidx.window.extensions"
+114-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+115            android:required="false" />
+115-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+116        <uses-library
+116-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+117            android:name="androidx.window.sidecar"
+117-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+118            android:required="false" />
+118-->[androidx.window:window:1.0.0] /home/sali/.gradle/caches/transforms-4/0c48324eaafcd338fc7d13c975114888/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+119
+120        <receiver
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+121            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+122            android:directBootAware="false"
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+123            android:enabled="true"
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+124            android:exported="true"
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+125            android:permission="android.permission.DUMP" >
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+127                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+128            </intent-filter>
+129            <intent-filter>
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+130                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+131            </intent-filter>
+132            <intent-filter>
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+133                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+134            </intent-filter>
+135            <intent-filter>
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+136                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/sali/.gradle/caches/transforms-4/db6b644854cbb776136d5ebe1b5365f2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+137            </intent-filter>
+138        </receiver>
+139
+140        <activity
+140-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+141            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+141-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+142            android:clearTaskOnLaunch="true"
+142-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+143            android:screenOrientation="sensorLandscape"
+143-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+144            android:stateNotNeeded="true"
+144-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+145            android:theme="@style/zxing_CaptureTheme"
+145-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+146            android:windowSoftInputMode="stateAlwaysHidden" />
+146-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/sali/.gradle/caches/transforms-4/73bbfbd1a16f06d367e2cccdf470f5a7/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+147    </application>
+148
+149</manifest>

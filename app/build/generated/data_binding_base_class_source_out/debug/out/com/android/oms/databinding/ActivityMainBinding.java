@@ -32,6 +32,12 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button keyManagerBtn;
 
   @NonNull
+  public final TextInputLayout keyName;
+
+  @NonNull
+  public final TextInputEditText keyNameView;
+
+  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
@@ -53,7 +59,8 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView textView;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button button,
-      @NonNull Button button5, @NonNull Button keyManagerBtn, @NonNull ConstraintLayout main,
+      @NonNull Button button5, @NonNull Button keyManagerBtn, @NonNull TextInputLayout keyName,
+      @NonNull TextInputEditText keyNameView, @NonNull ConstraintLayout main,
       @NonNull TextInputEditText messageView, @NonNull TextInputEditText phoneNumberView,
       @NonNull Button selectContactButton, @NonNull TextInputLayout textInputLayout,
       @NonNull TextInputLayout textInputLayout2, @NonNull TextView textView) {
@@ -61,6 +68,8 @@ public final class ActivityMainBinding implements ViewBinding {
     this.button = button;
     this.button5 = button5;
     this.keyManagerBtn = keyManagerBtn;
+    this.keyName = keyName;
+    this.keyNameView = keyNameView;
     this.main = main;
     this.messageView = messageView;
     this.phoneNumberView = phoneNumberView;
@@ -115,6 +124,18 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.key_name;
+      TextInputLayout keyName = ViewBindings.findChildViewById(rootView, id);
+      if (keyName == null) {
+        break missingId;
+      }
+
+      id = R.id.keyNameView;
+      TextInputEditText keyNameView = ViewBindings.findChildViewById(rootView, id);
+      if (keyNameView == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.messageView;
@@ -154,8 +175,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, button, button5, keyManagerBtn,
-          main, messageView, phoneNumberView, selectContactButton, textInputLayout,
-          textInputLayout2, textView);
+          keyName, keyNameView, main, messageView, phoneNumberView, selectContactButton,
+          textInputLayout, textInputLayout2, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

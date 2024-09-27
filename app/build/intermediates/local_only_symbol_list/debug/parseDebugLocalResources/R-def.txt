@@ -23,6 +23,8 @@ id guideline6
 id guideline7
 id itemInput
 id keyManagerBtn
+id keyNameView
+id key_name
 id listView
 id main
 id messageView

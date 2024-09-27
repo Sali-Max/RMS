@@ -3412,6 +3412,8 @@ int id item_touch_helper_previous_elevation 0x7f0800f2
 int id jumpToEnd 0x7f0800f3
 int id jumpToStart 0x7f0800f4
 int id keyManagerBtn 0x7f0800f5
+int id keyNameView 0x7f08022b
+int id key_name 0x7f08022a
 int id labeled 0x7f0800f6
 int id layout 0x7f0800f7
 int id left 0x7f0800f8
