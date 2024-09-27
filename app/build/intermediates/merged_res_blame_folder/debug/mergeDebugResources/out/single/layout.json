@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-47:/layout/activity_key_manager.xml",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/layout/activity_key_manager.xml"
+    },
+    {
+        "merged": "com.android.oms.app-mergeDebugResources-47:/layout/list_item_sent.xml",
+        "source": "com.android.oms.app-main-50:/layout/list_item_sent.xml"
+    },
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-47:/layout/activity_messages.xml",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/layout/activity_messages.xml"
+    },
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-47:/layout/activity_scan_qr.xml",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/layout/activity_scan_qr.xml"
+    },
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-47:/layout/list_item_received.xml",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/layout/list_item_received.xml"
+    },
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-47:/layout/list_item_sent.xml",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/layout/list_item_sent.xml"
+    },
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-47:/layout/activity_add_key.xml",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/layout/activity_add_key.xml"
+    },
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-47:/layout/activity_main.xml",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/layout/activity_main.xml"
+    }
+]

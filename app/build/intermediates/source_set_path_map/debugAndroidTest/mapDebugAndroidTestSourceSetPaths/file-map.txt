@@ -1,0 +1,5 @@
+com.android.oms.test.app-core-1.6.1-0 /home/sali/.gradle/caches/transforms-4/fdd6c5cfa95432b2c6be62398d8226ac/transformed/core-1.6.1/res
+com.android.oms.test.app-androidTest-1 /home/sali/AndroidStudioProjects/OMS/app/build/generated/res/resValues/androidTest/debug
+com.android.oms.test.app-mergeDebugAndroidTestResources-2 /home/sali/AndroidStudioProjects/OMS/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.android.oms.test.app-mergeDebugAndroidTestResources-3 /home/sali/AndroidStudioProjects/OMS/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.android.oms.test.app-debugAndroidTest-4 /home/sali/AndroidStudioProjects/OMS/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
