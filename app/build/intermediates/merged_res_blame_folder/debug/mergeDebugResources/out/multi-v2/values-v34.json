@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-46:/values-v34/values-v34.xml",
+            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-v34/values-v34.xml",
             "map": [
                 {
                     "source": "/home/sali/.gradle/caches/transforms-4/a074c1685fb94c8a04a8ba3aca419078/transformed/material-1.12.0/res/values-v34/values-v34.xml",

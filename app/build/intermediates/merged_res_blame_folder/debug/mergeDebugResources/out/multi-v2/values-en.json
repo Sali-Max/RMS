@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-46:/values-en/values-en.xml",
+            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-en/values-en.xml",
             "map": [
                 {
                     "source": "/home/sali/AndroidStudioProjects/OMS/app/src/main/res/values-en/strings.xml",

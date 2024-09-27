@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-46:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/sali/.gradle/caches/transforms-4/a074c1685fb94c8a04a8ba3aca419078/transformed/material-1.12.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",

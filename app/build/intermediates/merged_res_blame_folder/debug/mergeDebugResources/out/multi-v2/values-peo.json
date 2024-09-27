@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-46:/values-peo/values-peo.xml",
+            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-peo/values-peo.xml",
             "map": [
                 {
                     "source": "/home/sali/AndroidStudioProjects/OMS/app/src/main/res/values-b+peo/strings.xml",

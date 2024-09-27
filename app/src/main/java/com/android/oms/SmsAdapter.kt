@@ -123,18 +123,24 @@ class SmsAdapter(private val context: Context, private val smsList: List<SmsItem
 
 
 
+    fun isMessageEncrypted(input: String): Boolean {
 
-    fun isMessageEncrypted(message: String): Boolean {
-        // Define criteria for encryption
-        // Example: An encrypted message should have at least one special character and should be longer than 10 characters
-        val hasSpecialChar = message.any { !it.isLetterOrDigit() }
-        val isLongEnough = message.length > 10
+        val base64Regex = Regex("^[A-Za-z0-9+/=]+$")
+        if (!base64Regex.matches(input)) {
+            return false
+        }
 
-        return hasSpecialChar && isLongEnough
+        if (!input.endsWith("=")) {
+            return false
+        }
+
+        // اگر تمام شرایط درست بود، احتمال می‌دهیم که رشته RSA رمزنگاری شده باشد
+        return true
     }
 
+
     @RequiresApi(Build.VERSION_CODES.O)
-    fun getOMS(encryptedText: String): String {
+    fun getRMS(encryptedText: String): String {
 
         // String To Byte Array
         val encryptedDataFromBase64 = Base64.getDecoder().decode(encryptedText)

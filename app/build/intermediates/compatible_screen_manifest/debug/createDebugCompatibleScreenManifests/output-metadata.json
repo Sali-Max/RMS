@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.android.oms",
+  "applicationId": "com.android.rms",
   "variantName": "debug",
   "elements": []
 }

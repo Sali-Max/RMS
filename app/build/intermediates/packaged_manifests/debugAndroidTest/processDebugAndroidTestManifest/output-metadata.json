@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.android.oms.test",
+  "applicationId": "com.android.rms.test",
   "variantName": "debugAndroidTest",
   "elements": [
     {

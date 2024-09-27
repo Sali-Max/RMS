@@ -45,17 +45,27 @@ import java.security.spec.PKCS8EncodedKeySpec
 import java.security.spec.X509EncodedKeySpec
 
 import android.app.Activity
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.widget.EditText
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.android.oms.databinding.ActivityMainBinding
 import java.sql.RowId
+
+
+import android.Manifest
+
+
 
 class MainActivity : AppCompatActivity() {
 
 
     // Global Variable
-
+    private val REQUEST_SMS_PERMISSION = 123
+    private val SMS_PERMISSION_CODE = 100
     val PICK_CONTACT_REQUEST = 1  // یک کد درخواست برای نتیجه مخاطبین
+
     private lateinit var binding: ActivityMainBinding
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -71,17 +81,27 @@ class MainActivity : AppCompatActivity() {
             insets
 
         }
-
-
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        checkPermission()
+
+
 
 
         // Public Value
 
 
     }
+
+
+    private fun checkPermission() { //  Give SMS Prmisson
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.SEND_SMS), SMS_PERMISSION_CODE)
+        }
+    }
+
+
 
 
     //On click send BTN
@@ -371,6 +391,21 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+
+
+
+        fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+            if (requestCode == REQUEST_SMS_PERMISSION) {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
+                    Toast.makeText(this, "مجوزهای پیامک داده شد", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "مجوزهای پیامک رد شد", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
     }
 
 }

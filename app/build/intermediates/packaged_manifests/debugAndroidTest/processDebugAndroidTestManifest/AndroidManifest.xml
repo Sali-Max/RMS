@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.oms.test" >
+    package="com.android.rms.test" >
 
     <uses-sdk
         android:minSdkVersion="26"
@@ -10,8 +10,8 @@
         android:name="androidx.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.android.oms"
-        android:targetPackage="com.android.oms" />
+        android:label="Tests for com.android.rms"
+        android:targetPackage="com.android.rms" />
 
     <queries>
         <package android:name="androidx.test.orchestrator" />
