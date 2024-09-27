@@ -90,24 +90,29 @@ class MainActivity : AppCompatActivity() {
         val messageView: TextView = findViewById(R.id.messageView)
         val message = messageView.text.toString()
 
-        if (message !="") {
+        if (message !="") { //Check Empty
 
             val name_key = findViewById<EditText>(R.id.keyNameView)
             val key: String = readString(name_key.text.toString(), "other-key").toString()
-
-            if (name_key.text.toString() != "" && key != "") {
-
-
-                val phoneNumberView: TextView = findViewById(R.id.phoneNumberView)
-                val phone = phoneNumberView.text.toString()
+            val phoneNumberView: TextView = findViewById(R.id.phoneNumberView)
+            val phone = phoneNumberView.text.toString()
 
                 //message = encrypt(message, "abc")
+                if (name_key.text.toString() == "key")  //send with my key public
+                {
+                    sendOMS(phone, message, getPublic())    //Send OMS with Key
+                }
+                else
+                {
+                    if (name_key.text.toString() != "" && key != "") { // Check Avilable Name_Key
 
-                sendOMS(phone, message, stringToPublicKey(key))    //Send OMS with Key
+                        sendOMS(phone, message, stringToPublicKey(key))    //Send OMS with Key
+                    } else {
+                        Toast.makeText(this, "Enter Valid name Key", Toast.LENGTH_SHORT).show()
+                    }
+                }
 
-            } else {
-                Toast.makeText(this, "Enter Valid name Key", Toast.LENGTH_SHORT).show()
-            }
+
         }
 
         else{

@@ -58,11 +58,17 @@ class addKey : AppCompatActivity() {
         addBtn.setOnClickListener {
             val nameText = nameInput.text.toString().trim()
             val itemText = itemInput.text.toString().trim()
+            if (nameInput.text.toString() != "" && nameInput.text.toString() != "key") {
 
-            if (nameText.isNotEmpty() && itemText.isNotEmpty()) {
-                addItem(nameText, itemText)
-                nameInput.text?.clear() // Clear name input after adding
-                itemInput.text?.clear() // Clear item input after adding
+                if (nameText.isNotEmpty() && itemText.isNotEmpty()) {
+                    addItem(nameText, itemText)
+                    nameInput.text?.clear() // Clear name input after adding
+                    itemInput.text?.clear() // Clear item input after adding
+                }
+            }
+            else
+            {
+                Toast.makeText(this, "key name Unavilable", Toast.LENGTH_SHORT).show()
             }
         }
 

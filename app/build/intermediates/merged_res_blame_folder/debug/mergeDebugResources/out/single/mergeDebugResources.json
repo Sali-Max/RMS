@@ -8,16 +8,16 @@
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.android.oms.app-debug-48:/layout_activity_add_key.xml.flat",
+        "source": "com.android.oms.app-main-50:/layout/activity_add_key.xml"
+    },
+    {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-48:/xml_backup_rules.xml.flat",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/xml/backup_rules.xml"
     },
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-48:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-50:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.android.oms.app-debug-48:/layout_activity_main.xml.flat",
-        "source": "com.android.oms.app-main-50:/layout/activity_main.xml"
     },
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-48:/drawable_sent_message_background.xml.flat",

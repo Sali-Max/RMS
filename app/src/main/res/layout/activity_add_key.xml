@@ -54,8 +54,8 @@
                 android:id="@+id/addBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add"
-                android:layout_marginStart="8dp" />
+                android:layout_marginStart="8dp"
+                android:text="Add" />
         </LinearLayout>
 
         <!-- ListView to display Name: Item pairs -->
