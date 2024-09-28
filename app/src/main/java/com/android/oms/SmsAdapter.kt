@@ -118,24 +118,36 @@ class SmsAdapter(private val context: Context, private val smsList: List<SmsItem
         val tvDateTime: TextView = view.findViewById(R.id.tvDateTime)
     }
 
-
+    fun wordCount(input: String): Int {
+        val words = input.split(Regex("\\s+")).filter { it.isNotEmpty() }
+        return words.size
+    }
 // Decrypy ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
     fun isMessageEncrypted(input: String): Boolean {
 
-        val base64Regex = Regex("^[A-Za-z0-9+/=]+$")
-        if (!base64Regex.matches(input)) {
-            return false
+        if (input.length > 130)
+        {
+            if (wordCount(input) == 1)
+            {
+                return true
+            }
         }
+//        val base64Regex = Regex("^[A-Za-z0-9+/=]+$")
+//        if (!base64Regex.matches(input)) {
+//            return true
+//        }
 
-        if (!input.endsWith("=")) {
-            return false
+        if (input.endsWith("�")) {
+            return true
         }
-
-        // اگر تمام شرایط درست بود، احتمال می‌دهیم که رشته RSA رمزنگاری شده باشد
-        return true
+        if (input.endsWith("/") || input.endsWith("%") || input.endsWith("=")) {
+            return true
+        }
+        println(input)
+        return false
     }
 
 

@@ -23,8 +23,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="399dp"
-        android:layout_height="60dp"
+        android:layout_width="378dp"
+        android:layout_height="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,18 +42,19 @@
         android:id="@+id/button"
         android:layout_width="118dp"
         android:layout_height="48dp"
+        android:layout_marginStart="128dp"
         android:onClick="sendBtn"
         android:text="Send"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.97" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
-        android:layout_width="0dp"
+        android:layout_width="293dp"
         android:layout_height="59dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/selectContactButton"
@@ -84,38 +85,40 @@
         android:id="@+id/keyManagerBtn"
         android:layout_width="144dp"
         android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="235dp"
         android:onClick="qrCodeActivity"
         android:text="Key Manage"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="128dp"
         android:onClick="allMessageActivity"
         android:text="Show Messages"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
         app:layout_constraintVertical_bias="0.96" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/key_name"
-        android:layout_width="251dp"
-        android:layout_height="65dp"
+        android:layout_width="256dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="128dp"
         android:hint="Key Name"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintVertical_bias="0.8">
+        app:layout_constraintVertical_bias="0.59000003">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/keyNameView"

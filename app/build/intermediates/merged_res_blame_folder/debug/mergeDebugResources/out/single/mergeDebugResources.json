@@ -1,114 +1,118 @@
 [
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_activity_main.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_main.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_received_message_bg.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/drawable/received_message_bg.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.android.oms.app-main-53:/drawable/ic_launcher_background.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/drawable_received_message_background.xml.flat",
-        "source": "com.android.oms.app-main-53:/drawable/received_message_background.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/layout_list_item_sent.xml.flat",
-        "source": "com.android.oms.app-main-53:/layout/list_item_sent.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/navigation_nav_graph.xml.flat",
-        "source": "com.android.oms.app-main-53:/navigation/nav_graph.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/xml_backup_rules.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/layout_activity_key_manager.xml.flat",
-        "source": "com.android.oms.app-main-53:/layout/activity_key_manager.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_sent_message_background.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/drawable/sent_message_background.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_activity_messages.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_messages.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/xml_backup_rules.xml.flat",
-        "source": "com.android.oms.app-main-53:/xml/backup_rules.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/drawable_sent_message_background.xml.flat",
-        "source": "com.android.oms.app-main-53:/drawable/sent_message_background.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/layout_activity_add_key.xml.flat",
-        "source": "com.android.oms.app-main-53:/layout/activity_add_key.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_list_item_sent.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/list_item_sent.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/xml_data_extraction_rules.xml.flat",
-        "source": "com.android.oms.app-main-53:/xml/data_extraction_rules.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_sent_message_bg.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/drawable/sent_message_bg.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.android.oms.app-main-53:/drawable/ic_launcher_foreground.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/layout_activity_messages.xml.flat",
-        "source": "com.android.oms.app-main-53:/layout/activity_messages.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_list_item_received.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/list_item_received.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_activity_scan_qr.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_scan_qr.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/drawable_sent_message_bg.xml.flat",
-        "source": "com.android.oms.app-main-53:/drawable/sent_message_bg.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/navigation_nav_graph.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/navigation/nav_graph.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/layout_list_item_received.xml.flat",
-        "source": "com.android.oms.app-main-53:/layout/list_item_received.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_activity_add_key.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_add_key.xml"
+    },
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_activity_key_manager.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_key_manager.xml"
     },
     {
         "merged": "com.android.oms.app-debug-51:/layout_activity_main.xml.flat",
         "source": "com.android.oms.app-main-53:/layout/activity_main.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_received_message_background.xml.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/drawable/received_message_background.xml"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/drawable_received_message_bg.xml.flat",
-        "source": "com.android.oms.app-main-53:/drawable/received_message_bg.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android.oms.app-debug-51:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.android.oms.app-main-53:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.android.oms.app-debug-51:/layout_activity_scan_qr.xml.flat",
-        "source": "com.android.oms.app-main-53:/layout/activity_scan_qr.xml"
+        "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-xxhdpi/ic_launcher.webp"
     }
 ]
