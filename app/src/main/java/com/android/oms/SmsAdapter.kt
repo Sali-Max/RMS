@@ -92,6 +92,9 @@ class SmsAdapter(private val context: Context, private val smsList: List<SmsItem
                 else{
                     viewHolder.tvMessageBody.text = final_message
                     viewHolder.tvMessageBody.setTextColor(Color.GREEN)
+                    println("--------------------------------------")
+                    print(final_message)
+                    println("--------------------------------------")
                 }
             }
             catch (e : Exception)
@@ -128,28 +131,39 @@ class SmsAdapter(private val context: Context, private val smsList: List<SmsItem
 
     fun isMessageEncrypted(input: String): Boolean {
 
-        if (input.length > 130)
+        if (input.length >= 120 && !isNumeric(input))
         {
-            if (wordCount(input) == 1)
+            if (wordCount(input) <= 4)
             {
                 return true
             }
         }
+
+        if(input.length >= 200 && wordCount(input) <= 6 && !isNumeric(input))
+        {
+            return true
+        }
+
+
+        if (wordCount(input) == 1 && input.length > 50 && !isNumeric(input))  //  word count = 1
+        {
+                return true
+        }
+
 //        val base64Regex = Regex("^[A-Za-z0-9+/=]+$")
 //        if (!base64Regex.matches(input)) {
 //            return true
 //        }
 
-        if (input.endsWith("�")) {
+        if (input.endsWith("%") || input.startsWith("'") || input.startsWith("%") || input.endsWith("=" ) || input.endsWith("�") || input.startsWith("�")) {
             return true
         }
-        if (input.endsWith("/") || input.endsWith("%") || input.endsWith("=")) {
-            return true
-        }
-        println(input)
         return false
     }
 
+    fun isNumeric(input: String): Boolean {
+        return input.all { it.isDigit() }
+    }
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun getRMS(encryptedText: String): String {
