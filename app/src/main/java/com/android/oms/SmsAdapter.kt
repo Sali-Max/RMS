@@ -174,7 +174,7 @@ class SmsAdapter(private val context: Context, private val smsList: List<SmsItem
 //            return true
 //        }
 
-        if (input.endsWith("%") || input.startsWith("'") || input.startsWith("%") || input.endsWith("=" ) || input.endsWith("�") || input.startsWith("�") || input.startsWith("\u0014")) {
+        if (input.endsWith("%") || input.startsWith('"') || input.startsWith("'") || input.startsWith("%") || input.endsWith("=" ) || input.endsWith("�") || input.startsWith("�") || input.startsWith("\u0014")) {
             return true
         }
 

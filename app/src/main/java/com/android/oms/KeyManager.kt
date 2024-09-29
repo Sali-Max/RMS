@@ -1,6 +1,5 @@
 package com.android.oms
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -19,7 +18,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity.MODE_PRIVATE
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.WriterException
 import com.google.zxing.common.BitMatrix
@@ -77,6 +75,11 @@ class KeyManager : AppCompatActivity() {
 
         editor.putString(key, value)  // Save the string value
         editor.apply()                // Commit the changes asynchronously
+    }
+    fun delete_group(group: String)
+    {
+        val sharedPreferences = getSharedPreferences("$group", MODE_PRIVATE)
+        sharedPreferences.edit().clear().apply()
     }
 
 
@@ -220,6 +223,8 @@ class KeyManager : AppCompatActivity() {
             }
             .setCancelable(true) // Optional: allows dialog to be canceled by clicking outside
             .show()
+
+        delete_group("send-message")
 
     }
 
