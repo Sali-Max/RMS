@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.android.oms.app-mergeDebugResources-48:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/home/sali/AndroidStudioProjects/OMS/app/src/main/res/values-night/themes.xml",

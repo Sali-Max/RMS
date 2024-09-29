@@ -11,8 +11,8 @@ android {
         applicationId = "com.android.rms"
         minSdk = 26
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.0.2"
+        versionCode = 5
+        versionName = "1.0.8"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -50,9 +50,9 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")  //Qrcode
-    implementation("com.google.zxing:core:3.4.1")
+    implementation("com.google.zxing:core:3.5.3")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation ("com.google.android.gms:play-services-auth:20.5.0") // send Sms
+    implementation ("com.google.android.gms:play-services-auth:21.2.0") // send Sms
 }

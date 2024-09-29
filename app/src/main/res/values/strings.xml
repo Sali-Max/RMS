@@ -16,8 +16,8 @@
 
         \n \n <b>How does this program fundamentally work?</b>\n
         Messages are encrypted with  public key and decrypted by the recipient using a private key. \n \n
-        In this program, you need to add the public key of the person you want to send a message to, choose a name for the key, and when you want to send a message, enter the name of the recipient's public key. \n
-        "You can scan the Qrcode of the public key and easily have the other party's key. Please note that this is a public key, and sharing it does not cause any issues." \n
+        In this program, you need to add the public key of the person you want to send a message to, choose a name for the key, and when you want to send a message, enter the name of the recipients public key. \n
+        "You can scan the Qrcode of the public key and easily have the other partys key. Please note that this is a public key, and sharing it does not cause any issues." \n
 
         \n \n <b>Is it possible for the password to be hacked?</b> \n
         Yes, but the time required for this is more than a few months. \n

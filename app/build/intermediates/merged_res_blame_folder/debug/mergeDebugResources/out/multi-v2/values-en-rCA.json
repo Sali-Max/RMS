@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "com.android.oms.app-mergeDebugResources-48:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "/home/sali/.gradle/caches/transforms-4/26b3e2f99721572f1c80e010fdba3046/transformed/core-1.13.1/res/values-en-rCA/values-en-rCA.xml",

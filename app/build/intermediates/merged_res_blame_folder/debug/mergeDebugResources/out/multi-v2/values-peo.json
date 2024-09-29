@@ -1,7 +1,22 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-peo/values-peo.xml",
+            "outputFile": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-48:/values-peo/values-peo.xml",
+            "map": [
+                {
+                    "source": "/home/sali/AndroidStudioProjects/OMS/app/src/main/res/values-b+peo/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "40",
+                        "endOffsets": "91"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.android.oms.app-mergeDebugResources-48:/values-peo/values-peo.xml",
             "map": [
                 {
                     "source": "/home/sali/AndroidStudioProjects/OMS/app/src/main/res/values-b+peo/strings.xml",

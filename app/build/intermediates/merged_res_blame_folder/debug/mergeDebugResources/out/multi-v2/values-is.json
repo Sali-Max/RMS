@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-is/values-is.xml",
+            "outputFile": "com.android.oms.app-mergeDebugResources-48:/values-is/values-is.xml",
             "map": [
                 {
                     "source": "/home/sali/.gradle/caches/transforms-4/e65490659c49af4fdbfb224e78014409/transformed/navigation-ui-2.8.0/res/values-is/values-is.xml",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/sali/.gradle/caches/transforms-4/f332b4db27547e507fd2461e09268597/transformed/play-services-base-18.0.1/res/values-is/values.xml",
+                    "source": "/home/sali/.gradle/caches/transforms-4/0f9a66e8936c29b58e9cbc3e258897dc/transformed/play-services-base-18.3.0/res/values-is/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,23 +69,6 @@
                         "startOffsets": "4392,4498,4652,4777,4886,5027,5152,5261,5495,5649,5755,5912,6038,6180,6334,6398,6461",
                         "endColumns": "105,153,124,108,140,124,108,104,153,105,156,125,141,153,63,62,78",
                         "endOffsets": "4493,4647,4772,4881,5022,5147,5256,5361,5644,5750,5907,6033,6175,6329,6393,6456,6535"
-                    }
-                },
-                {
-                    "source": "/home/sali/.gradle/caches/transforms-4/7fd5205e1a8bb500d7c5cccdca1aa978/transformed/play-services-basement-18.2.0/res/values-is/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "124",
-                        "endOffsets": "319"
-                    },
-                    "to": {
-                        "startLines": "56",
-                        "startColumns": "4",
-                        "startOffsets": "5366",
-                        "endColumns": "128",
-                        "endOffsets": "5490"
                     }
                 },
                 {
@@ -105,6 +88,23 @@
                         "endLines": "5,33,34,35,36,37,45,46,47,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,131,133,134,135",
                         "endColumns": "12,73,71,78,81,79,96,114,81,57,64,87,63,60,89,63,62,61,67,63,55,122,64,61,55,70,126,83,73,96,80,83,135,76,76,115,86,78,56,54,65,75,79,70,75,66,73,69,65,101,85,69,90,89,73,72,88,50,80,71,80,85,61,63,62,68,113,105,107,101,60,58,79,83,78,74",
                         "endOffsets": "315,3063,3135,3214,3296,3376,4190,4305,4387,6593,6658,6746,6810,6871,6961,7025,7088,7150,7218,7282,7338,7461,7526,7588,7644,7715,7842,7926,8000,8097,8178,8262,8398,8475,8552,8668,8755,8834,8891,8946,9012,9088,9168,9239,9315,9382,9456,9526,9592,9694,9780,9850,9941,10031,10105,10178,10267,10318,10399,10471,10552,10638,10700,10764,10827,10896,11010,11116,11224,11326,11387,11446,11743,11908,11987,12062"
+                    }
+                },
+                {
+                    "source": "/home/sali/.gradle/caches/transforms-4/e4b4fe32093c7b059b8e3159dadee6d4/transformed/play-services-basement-18.3.0/res/values-is/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "124",
+                        "endOffsets": "319"
+                    },
+                    "to": {
+                        "startLines": "56",
+                        "startColumns": "4",
+                        "startOffsets": "5366",
+                        "endColumns": "128",
+                        "endOffsets": "5490"
                     }
                 }
             ]

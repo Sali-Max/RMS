@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-gl/values-gl.xml",
+            "outputFile": "com.android.oms.app-mergeDebugResources-48:/values-gl/values-gl.xml",
             "map": [
-                {
-                    "source": "/home/sali/.gradle/caches/transforms-4/7fd5205e1a8bb500d7c5cccdca1aa978/transformed/play-services-basement-18.2.0/res/values-gl/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "129",
-                        "endOffsets": "324"
-                    },
-                    "to": {
-                        "startLines": "56",
-                        "startColumns": "4",
-                        "startOffsets": "5590",
-                        "endColumns": "133",
-                        "endOffsets": "5719"
-                    }
-                },
                 {
                     "source": "/home/sali/.gradle/caches/transforms-4/26b3e2f99721572f1c80e010fdba3046/transformed/core-1.13.1/res/values-gl/values-gl.xml",
                     "from": {
@@ -35,6 +18,23 @@
                         "startOffsets": "3519,3618,3720,3820,3918,4025,4131,12660",
                         "endColumns": "98,101,99,97,106,105,115,100",
                         "endOffsets": "3613,3715,3815,3913,4020,4126,4242,12756"
+                    }
+                },
+                {
+                    "source": "/home/sali/.gradle/caches/transforms-4/e4b4fe32093c7b059b8e3159dadee6d4/transformed/play-services-basement-18.3.0/res/values-gl/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "129",
+                        "endOffsets": "324"
+                    },
+                    "to": {
+                        "startLines": "56",
+                        "startColumns": "4",
+                        "startOffsets": "5590",
+                        "endColumns": "133",
+                        "endOffsets": "5719"
                     }
                 },
                 {
@@ -91,7 +91,7 @@
                     }
                 },
                 {
-                    "source": "/home/sali/.gradle/caches/transforms-4/f332b4db27547e507fd2461e09268597/transformed/play-services-base-18.0.1/res/values-gl/values.xml",
+                    "source": "/home/sali/.gradle/caches/transforms-4/0f9a66e8936c29b58e9cbc3e258897dc/transformed/play-services-base-18.3.0/res/values-gl/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
