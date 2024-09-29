@@ -184,6 +184,10 @@ class KeyManager : AppCompatActivity() {
         val intent = Intent(this, addKey::class.java)
         startActivity(intent)
     }
+    fun helpDoc(view: View) {
+        val intent = Intent(this, helpDocument::class.java)
+        startActivity(intent)
+    }
 
     public fun generate_key_btn(view: View)
     {
@@ -296,14 +300,21 @@ class KeyManager : AppCompatActivity() {
 
     public fun scan_btn(view: View) {
         val nameQrcode = findViewById<EditText>(R.id.qrNameView)
-        if (nameQrcode.text.toString() == "") {
-            Toast.makeText(this, "First Fill QrCode name", Toast.LENGTH_LONG).show()
-
-        } else
+        if(readString("${nameQrcode.text}","other-key","") !=  "") // Check for avilable name Key
         {
-            IntentIntegrator(this)
-                .setOrientationLocked(false)
-                .initiateScan()
+            Toast.makeText(this, "Name Is aviable :(", Toast.LENGTH_SHORT).show()
+        }
+        else
+        {
+            if (nameQrcode.text.toString() == "") {
+                Toast.makeText(this, "First Fill QrCode name", Toast.LENGTH_LONG).show()
+
+            } else
+            {
+                IntentIntegrator(this)
+                    .setOrientationLocked(false)
+                    .initiateScan()
+            }
         }
     }
 

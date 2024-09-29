@@ -55,6 +55,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.OMS" >
         <activity
+            android:name="com.android.oms.helpDocument"
+            android:exported="false"
+            android:label="@string/title_activity_help_document"
+            android:theme="@style/Theme.OMS.NoActionBar" />
+        <activity
             android:name="com.android.oms.Messages"
             android:exported="false" />
         <activity

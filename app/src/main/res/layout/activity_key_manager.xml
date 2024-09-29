@@ -60,6 +60,7 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="helpDoc"
         android:text="Help"
         app:layout_constraintBottom_toTopOf="@+id/qrcodeView"
         app:layout_constraintEnd_toEndOf="parent"

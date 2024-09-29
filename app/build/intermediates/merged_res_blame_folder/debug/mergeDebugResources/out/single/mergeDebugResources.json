@@ -32,8 +32,16 @@
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/xml/backup_rules.xml"
     },
     {
+        "merged": "com.android.oms.app-debug-51:/layout-w936dp_content_scrolling.xml.flat",
+        "source": "com.android.oms.app-main-53:/layout-w936dp/content_scrolling.xml"
+    },
+    {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_sent_message_background.xml.flat",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/drawable/sent_message_background.xml"
+    },
+    {
+        "merged": "com.android.oms.app-debug-51:/layout-w1240dp_content_scrolling.xml.flat",
+        "source": "com.android.oms.app-main-53:/layout-w1240dp/content_scrolling.xml"
     },
     {
         "merged": "com.android.oms.app-debug-51:/layout_activity_key_manager.xml.flat",
@@ -56,12 +64,20 @@
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.android.oms.app-debug-51:/menu_menu_help_document.xml.flat",
+        "source": "com.android.oms.app-main-53:/menu/menu_help_document.xml"
+    },
+    {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_list_item_sent.xml.flat",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/list_item_sent.xml"
+    },
+    {
+        "merged": "com.android.oms.app-debug-51:/layout_activity_help_document.xml.flat",
+        "source": "com.android.oms.app-main-53:/layout/activity_help_document.xml"
     },
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_sent_message_bg.xml.flat",
@@ -102,6 +118,10 @@
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_activity_key_manager.xml.flat",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_key_manager.xml"
+    },
+    {
+        "merged": "com.android.oms.app-debug-51:/layout_content_scrolling.xml.flat",
+        "source": "com.android.oms.app-main-53:/layout/content_scrolling.xml"
     },
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_received_message_background.xml.flat",

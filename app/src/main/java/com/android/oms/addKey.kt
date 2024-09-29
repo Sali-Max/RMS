@@ -58,17 +58,24 @@ class addKey : AppCompatActivity() {
         addBtn.setOnClickListener {
             val nameText = nameInput.text.toString().trim()
             val itemText = itemInput.text.toString().trim()
-            if (nameInput.text.toString() != "" && nameInput.text.toString() != "key") {
-
-                if (nameText.isNotEmpty() && itemText.isNotEmpty()) {
-                    addItem(nameText, itemText)
-                    nameInput.text?.clear() // Clear name input after adding
-                    itemInput.text?.clear() // Clear item input after adding
-                }
+            if(readString("$nameText","other-key","") !=  "")   // Check for avilable name Key
+            {
+                Toast.makeText(this, "Name Is aviable :(", Toast.LENGTH_SHORT).show()
             }
             else
             {
-                Toast.makeText(this, "key name Unavilable", Toast.LENGTH_SHORT).show()
+                if (nameInput.text.toString() != "" && nameInput.text.toString() != "key") {
+
+                    if (nameText.isNotEmpty() && itemText.isNotEmpty()) {
+                        addItem(nameText, itemText)
+                        nameInput.text?.clear() // Clear name input after adding
+                        itemInput.text?.clear() // Clear item input after adding
+                    }
+                }
+                else
+                {
+                    Toast.makeText(this, "key name Unavilable", Toast.LENGTH_SHORT).show()
+                }
             }
         }
 
@@ -99,6 +106,16 @@ class addKey : AppCompatActivity() {
             itemList.add(listItem)
         }
         adapter.notifyDataSetChanged()
+    }
+
+
+    fun readString(key: String, group: String, defaultValue: String = ""): String? {
+
+        val sharedPref = getSharedPreferences("$group", MODE_PRIVATE)
+        return sharedPref.getString(
+            key,
+            defaultValue
+        )  // Return the stored value, or the default value if key is not found
     }
 
     // Save name:item pair to SharedPreferences

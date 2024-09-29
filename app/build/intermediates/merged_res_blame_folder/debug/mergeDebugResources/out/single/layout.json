@@ -8,8 +8,16 @@
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_messages.xml"
     },
     {
+        "merged": "com.android.oms.app-mergeDebugResources-50:/layout/activity_help_document.xml",
+        "source": "com.android.oms.app-main-53:/layout/activity_help_document.xml"
+    },
+    {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-50:/layout/activity_scan_qr.xml",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_scan_qr.xml"
+    },
+    {
+        "merged": "com.android.oms.app-mergeDebugResources-50:/layout/content_scrolling.xml",
+        "source": "com.android.oms.app-main-53:/layout/content_scrolling.xml"
     },
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-50:/layout/list_item_received.xml",

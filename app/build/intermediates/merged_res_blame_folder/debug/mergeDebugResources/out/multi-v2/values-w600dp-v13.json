@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-mergeDebugResources-49:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/sali/AndroidStudioProjects/OMS/app/src/main/res/values-w600dp/dimens.xml",
@@ -18,6 +18,28 @@
                         "startOffsets": "55",
                         "endColumns": "41",
                         "endOffsets": "92"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.android.oms.app-mergeDebugResources-49:/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/sali/AndroidStudioProjects/OMS/app/src/main/res/values-w600dp/dimens.xml",
+                    "from": {
+                        "startLines": "-1,2",
+                        "startColumns": "-1,4",
+                        "startOffsets": "-1,58",
+                        "endColumns": "-1,42",
+                        "endOffsets": "-1,96"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,42",
+                        "endOffsets": "92,135"
                     }
                 }
             ]
