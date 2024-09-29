@@ -33,6 +33,9 @@ public final class ActivityKeyManagerBinding implements ViewBinding {
   public final Button button4;
 
   @NonNull
+  public final Button button6;
+
+  @NonNull
   public final Guideline guideline6;
 
   @NonNull
@@ -51,14 +54,15 @@ public final class ActivityKeyManagerBinding implements ViewBinding {
   public final TextView textView2;
 
   private ActivityKeyManagerBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
-      @NonNull Button button3, @NonNull Button button4, @NonNull Guideline guideline6,
-      @NonNull Guideline guideline7, @NonNull ConstraintLayout main,
+      @NonNull Button button3, @NonNull Button button4, @NonNull Button button6,
+      @NonNull Guideline guideline6, @NonNull Guideline guideline7, @NonNull ConstraintLayout main,
       @NonNull TextInputEditText qrNameView, @NonNull ImageView qrcodeView,
       @NonNull TextView textView2) {
     this.rootView = rootView;
     this.button2 = button2;
     this.button3 = button3;
     this.button4 = button4;
+    this.button6 = button6;
     this.guideline6 = guideline6;
     this.guideline7 = guideline7;
     this.main = main;
@@ -112,6 +116,12 @@ public final class ActivityKeyManagerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button6;
+      Button button6 = ViewBindings.findChildViewById(rootView, id);
+      if (button6 == null) {
+        break missingId;
+      }
+
       id = R.id.guideline6;
       Guideline guideline6 = ViewBindings.findChildViewById(rootView, id);
       if (guideline6 == null) {
@@ -145,7 +155,7 @@ public final class ActivityKeyManagerBinding implements ViewBinding {
       }
 
       return new ActivityKeyManagerBinding((ConstraintLayout) rootView, button2, button3, button4,
-          guideline6, guideline7, main, qrNameView, qrcodeView, textView2);
+          button6, guideline6, guideline7, main, qrNameView, qrcodeView, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

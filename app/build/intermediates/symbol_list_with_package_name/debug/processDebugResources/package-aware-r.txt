@@ -3316,6 +3316,7 @@ id button2
 id button3
 id button4
 id button5
+id button6
 id buttonPanel
 id cache_measures
 id callMeasure

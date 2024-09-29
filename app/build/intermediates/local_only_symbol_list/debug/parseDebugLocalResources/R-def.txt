@@ -19,6 +19,7 @@ id button2
 id button3
 id button4
 id button5
+id button6
 id guideline6
 id guideline7
 id itemInput

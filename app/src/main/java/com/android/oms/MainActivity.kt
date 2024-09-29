@@ -46,12 +46,9 @@ import java.security.spec.X509EncodedKeySpec
 
 import android.app.Activity
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.widget.EditText
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import com.android.oms.databinding.ActivityMainBinding
-import java.sql.RowId
 
 
 import android.Manifest
@@ -62,7 +59,6 @@ class MainActivity : AppCompatActivity() {
 
 
     // Global Variable
-    private val REQUEST_SMS_PERMISSION = 123
     private val SMS_PERMISSION_CODE = 100
     val PICK_CONTACT_REQUEST = 1  // یک کد درخواست برای نتیجه مخاطبین
 
@@ -89,8 +85,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        // Public Value
-
 
     }
 
@@ -102,11 +96,22 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+    fun keyIsValid(publicKey: PublicKey):Boolean
+    {
+        try {
+            encrypt("TEST", publicKey)
+        }
+        catch (e:Exception)
+        {
+            return false
+        }
+        return true
+    }
 
     //On click send BTN
     @RequiresApi(Build.VERSION_CODES.O)
     fun sendBtn(view: View) {
+
         val messageView: TextView = findViewById(R.id.messageView)
         val message = messageView.text.toString()
 
@@ -117,18 +122,24 @@ class MainActivity : AppCompatActivity() {
             val phoneNumberView: TextView = findViewById(R.id.phoneNumberView)
             val phone = phoneNumberView.text.toString()
 
-                //message = encrypt(message, "abc")
                 if (name_key.text.toString() == "key")  //send with my key public
                 {
-                    sendOMS(phone, message, getPublic())    //Send OMS with Key
+                    sendRMS(phone, message, getPublic())    //Send OMS with Key
                 }
                 else
                 {
                     if (name_key.text.toString() != "" && key != "") { // Check Avilable Name_Key
+                        try {
+                            sendRMS(phone, message, stringToPublicKey(key))    //Send OMS with Key
+                        }
+                        catch (e:Exception) // Key Error
+                        {
+                            Toast.makeText(this, "Key is Not Valid :(", Toast.LENGTH_LONG).show()
+                            return
+                        }
 
-                        sendOMS(phone, message, stringToPublicKey(key))    //Send OMS with Key
                     } else {
-                        Toast.makeText(this, "Enter Valid name Key", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Enter Valid name Key :(", Toast.LENGTH_SHORT).show()
                     }
                 }
 
@@ -136,7 +147,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         else{
-            Toast.makeText(this, "Enter Message", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Enter Message :(", Toast.LENGTH_SHORT).show()
         }
 
     }
@@ -162,37 +173,42 @@ class MainActivity : AppCompatActivity() {
 
 
     @RequiresApi(Build.VERSION_CODES.O)
-    fun sendOMS(phoneNumber: String, message: String, pub_key: PublicKey) {
+    fun sendRMS(phoneNumber: String, message: String, pub_key: PublicKey) {
 
         // Byte Array to String
         val originalMessage = message
         val encryptedData = encrypt(originalMessage, pub_key)
-
+        var encryptedText: String
 
         // EncrypyFile To String
-        val encryptedText: String = Base64.getEncoder().encodeToString(encryptedData)
+        encryptedText = Base64.getEncoder().encodeToString(encryptedData)
 
+
+        if (pub_key != getPublic()) {
+            writeString(encryptedText, message, "send-message")
+        }
 
         try {
             val smsManager: SmsManager = SmsManager.getDefault()
             // Split the message into parts and send
             val parts = smsManager.divideMessage(encryptedText)
             smsManager.sendMultipartTextMessage(phoneNumber, null, parts, null, null)
-            Toast.makeText(this, "OMS Sent!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "RMS Sent :)", Toast.LENGTH_LONG).show()
 
             val messageView: TextView = findViewById(R.id.messageView)
             messageView.text = ""   //Clear Message After Send
 
 
         } catch (e: Exception) {
-            Toast.makeText(this, "Failed to send OMS", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Failed to sendRMS :(", Toast.LENGTH_LONG).show()
         }
 
+        return
     }
 
 
     @RequiresApi(Build.VERSION_CODES.O)
-    fun getOMS(encryptedText: String):String {
+    fun getRMS(encryptedText: String):String {
 
         // String To Byte Array
         val encryptedDataFromBase64 = Base64.getDecoder().decode(encryptedText)
@@ -230,8 +246,8 @@ class MainActivity : AppCompatActivity() {
     fun getPublic(): PublicKey {
 
 
-        val public_tmp: String = readString("my-public", "").toString()
-        println(public_tmp) //Debug
+        val public_tmp: String = readString("my-public", "my-key").toString() //get Public Key
+
         if (public_tmp == "") {
             val keyPair = generateRSAKeyPair()
             val publicKey = keyPair.public
@@ -244,7 +260,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        val publicKey: PublicKey = stringToPublicKey(readString("my-public", "my-key").toString())
+        val publicKey: PublicKey = stringToPublicKey(public_tmp)
 
         return publicKey
     }
@@ -293,7 +309,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun readString(key: String, group: String = "my-key", defaultValue: String = ""): String? {
+    fun readString(key: String, group: String, defaultValue: String = ""): String? {
 
         val sharedPref = getSharedPreferences("$group", MODE_PRIVATE)
         return sharedPref.getString(
@@ -395,16 +411,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
-            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-            if (requestCode == REQUEST_SMS_PERMISSION) {
-                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(this, "مجوزهای پیامک داده شد", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(this, "مجوزهای پیامک رد شد", Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
 
     }
 

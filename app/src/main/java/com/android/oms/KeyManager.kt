@@ -185,11 +185,9 @@ class KeyManager : AppCompatActivity() {
     public fun generate_key_btn(view: View)
     {
 
-
-
         AlertDialog.Builder(this)
             .setTitle("Confirmation")
-            .setMessage("Are you sure you want to change your keys?")
+            .setMessage("Are you sure you want to change your key?")
             .setPositiveButton("Yes") { dialog, which ->
                 // Change Keys
                 val old_my_public: String =  readString("my-public","my-key").toString()
@@ -201,6 +199,7 @@ class KeyManager : AppCompatActivity() {
 
                 writeString("my-public", publicKeyToString(publicKey), "my-key")
                 writeString("my-private", privateKeyToString(privateKey), "my-key")
+
                 writeString("my-public-old", old_my_public, "my-key")
                 writeString("my-private-old", old_my_private, "my-key")
                 // End Change Keys
@@ -217,18 +216,67 @@ class KeyManager : AppCompatActivity() {
 
             }
             .setNegativeButton("No") { dialog, which ->
-                Toast.makeText(this, "Cancelled", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Cancelled :(", Toast.LENGTH_SHORT).show()
             }
             .setCancelable(true) // Optional: allows dialog to be canceled by clicking outside
             .show()
 
+    }
+
+
+    public fun backToOldKey(view: View)
+    {
+        AlertDialog.Builder(this)
+            .setTitle("Confirmation")
+            .setMessage("Are you sure: Back to old key?")
+            .setPositiveButton("Yes") { dialog, which ->
+                // Change Keys
+
+                val old_my_public = readString("my-public-old","my-key").toString()  //get old
+                val old_my_private = readString("my-private-old","my-key").toString()
+
+                if (old_my_private == "" || old_my_public == "")
+                {
+                    Toast.makeText(this, "Old Key Unavilable :(", Toast.LENGTH_LONG).show()
+                }
+
+
+                else{   // old key is avilable
+
+
+                    val new_my_public: String =  readString("my-public","my-key").toString() //get new
+                    val new_my_private: String = readString("my-private","my-key").toString()
 
 
 
+                    writeString("my-public-old", new_my_public, "my-key")   // new to old
+                    writeString("my-private-old", new_my_private, "my-key")
+
+                    writeString("my-public", old_my_public, "my-key") // old to new
+                    writeString("my-private",old_my_private, "my-key")
+
+                    // End Change Keys
+
+                    Toast.makeText(this, "Sucsessfull Switch Key :)", Toast.LENGTH_SHORT).show()
+
+                    //reGenerate qrcode
+                    val imageView = findViewById<ImageView>(R.id.qrcodeView)
+                    val qrCodeBitmap = generateQRCode(publicKeyToString(getPublic()))
+                    if (qrCodeBitmap != null) {
+                        imageView.setImageBitmap(qrCodeBitmap)
+                    }
+                    //End Generate
 
 
 
+                }
 
+            }
+            .setNegativeButton("No") { dialog, which ->
+                Toast.makeText(this, "Cancelled :(", Toast.LENGTH_SHORT).show()
+            }
+            .setCancelable(true) // Optional: allows dialog to be canceled by clicking outside
+            .show()
     }
 
 

@@ -77,32 +77,51 @@ class SmsAdapter(private val context: Context, private val smsList: List<SmsItem
         } else {
             viewHolder.tvSender.text = "Receive From: ${smsItem.sender}"
         }
-
-        if (isMessageEncrypted(smsItem.messageBody)) // iF Message Is encrypted
+        if (isMessageEncrypted(smsItem.messageBody)) // if Message Is encrypted
         {
-            try { //Crash Hanlled
-                val encryptedDataFromBase64 = Base64.getDecoder().decode(smsItem.messageBody)   // Convert Message to Array (required for decrypt)
-                 val final_message : String = decrypt(encryptedDataFromBase64,getPrivate())   // Decrypy And Show
-                if (isMessageEncrypted(final_message))
-                {
+        /////////////////////////////////////////////////// (decrypt message) if not decrypt , return orginal receive message
+            var final_message: String
+            if (smsItem.isSent) {
+                try {
 
-                    viewHolder.tvMessageBody.text = "---------------\naccess denied\n---------------"
-                    viewHolder.tvMessageBody.setTextColor(Color.RED)
+                    final_message = readString("${smsItem.messageBody}", "send-message","").toString()
+                    if (final_message == "")
+                    {
+                        val encryptedDataFromBase64 = Base64.getDecoder().decode(smsItem.messageBody)
+                        final_message = decrypt(encryptedDataFromBase64,getPrivate())   // Decrypt
+                    }
+
                 }
-                else{
-                    viewHolder.tvMessageBody.text = final_message
-                    viewHolder.tvMessageBody.setTextColor(Color.GREEN)
-                    println("--------------------------------------")
-                    print(final_message)
-                    println("--------------------------------------")
+                catch (e:Exception) // crash Handel (if decrypy not sucsess)
+                {
+                    final_message = smsItem.messageBody
                 }
-            }
-            catch (e : Exception)
+            } else
             {
-                viewHolder.tvMessageBody.text = smsItem.messageBody
+                try {
+                    val encryptedDataFromBase64 = Base64.getDecoder().decode(smsItem.messageBody)
+                    final_message = decrypt(encryptedDataFromBase64,getPrivate())   // Decrypt
+                }
+                catch (e:Exception) //crash Handel
+                {
+                    final_message= smsItem.messageBody
+                }
             }
+     ///////////////////////////////////////////////////// decrypy and show message , if decrypt error , show error
+            if (isMessageEncrypted(final_message)) // not decrypt
+            {
+
+                viewHolder.tvMessageBody.text = "-----------access denied-----------\n${smsItem.messageBody}\n-----------access denied-----------"
+                viewHolder.tvMessageBody.setTextColor(Color.RED)
+            }
+            else{
+                viewHolder.tvMessageBody.text = final_message
+                viewHolder.tvMessageBody.setTextColor(Color.GREEN)
+            }
+
 
         }
+
         else    // if Message is Normall
         {
             viewHolder.tvMessageBody.text = smsItem.messageBody
@@ -145,7 +164,7 @@ class SmsAdapter(private val context: Context, private val smsList: List<SmsItem
         }
 
 
-        if (wordCount(input) == 1 && input.length > 50 && !isNumeric(input))  //  word count = 1
+        if (wordCount(input) <= 1 && input.length > 50)  //  word count = 1
         {
                 return true
         }

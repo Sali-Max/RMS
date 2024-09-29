@@ -36,6 +36,10 @@
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/drawable/sent_message_background.xml"
     },
     {
+        "merged": "com.android.oms.app-debug-51:/layout_activity_key_manager.xml.flat",
+        "source": "com.android.oms.app-main-53:/layout/activity_key_manager.xml"
+    },
+    {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_activity_messages.xml.flat",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_messages.xml"
     },
@@ -98,10 +102,6 @@
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/layout_activity_key_manager.xml.flat",
         "source": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-main-53:/layout/activity_key_manager.xml"
-    },
-    {
-        "merged": "com.android.oms.app-debug-51:/layout_activity_main.xml.flat",
-        "source": "com.android.oms.app-main-53:/layout/activity_main.xml"
     },
     {
         "merged": "/home/sali/.gradle/daemon/8.7/com.android.oms.app-debug-51:/drawable_received_message_background.xml.flat",
