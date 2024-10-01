@@ -113,7 +113,7 @@
         android:layout_width="256dp"
         android:layout_height="69dp"
         android:layout_marginTop="128dp"
-        android:hint="Key Name"
+        android:hint="Key Name (&quot;key&quot; for your key)"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
